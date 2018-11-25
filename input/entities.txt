@@ -1,0 +1,90 @@
+N-acetylglutamate synthase, mitochondrial|N-acetylglutamate synthase|EC 2.3.1.1|Amino-acid acetyltransferase
+Protein/nucleic acid deglycase DJ-1|Protein DJ-1|EC 3.5.1.-|Maillard deglycase|DJ-1|Parkinson disease protein 7|Oncogene DJ1|Parkinsonism-associated deglycase|EC 3.5.1.124|EC 3.1.2.-
+Pyruvate carboxylase, mitochondrial|Pyruvic carboxylase|EC 6.4.1.1
+Bcl-2-binding component 3|p53 up-regulated modulator of apoptosis|JFY-1
+BH3-interacting domain death agonist|BH3-interacting domain death agonist p11|p15 BID|p13 BID|p11 BID|BH3-interacting death agonist p15|p22 BID|BH3-interacting domain death agonist p13
+ATP synthase subunit alpha, mitochondrial|ATP synthase F1 subunit alpha
+Cytochrome P450 11B2, mitochondrial|CYPXIB2|EC 1.14.15.5|Cytochrome P-450C18|Aldosterone-synthesizing enzyme|Cytochrome P-450Aldo|Steroid 18-hydroxylase|ALDOS|EC 1.14.15.4|Aldosterone synthase
+60 kDa heat shock protein, mitochondrial|HSP-60|EC 3.6.4.9|P60 lymphocyte protein|Hsp60|CPN60|Mitochondrial matrix protein P1|Heat shock protein 60|HuCHA60|60 kDa chaperonin|Chaperonin 60
+Caspase-4|ICE and Ced-3 homolog 2|ICH-2|Protease TX|Caspase-4 subunit 2|Caspase-4 subunit 1|CASP-4|EC 3.4.22.57|Mih1
+Calsequestrin-1|Calsequestrin, skeletal muscle isoform|Calmitine
+Cyclin-dependent kinase 1|EC 2.7.11.23|Cell division protein kinase 1|p34 protein kinase|EC 2.7.11.22|Cell division control protein 2 homolog|CDK1
+Caveolae-associated protein 1|Cavin-1|Polymerase I and transcript release factor
+Myocilin|Trabecular meshwork-induced glucocorticoid response protein|Myocilin 55 kDa subunit|Myocilin 35 kDa N-terminal fragment|Myocilin 20 kDa N-terminal fragment|Myocilin, N-terminal fragment|Myocilin, C-terminal fragment
+Serine/threonine-protein kinase PAK 5|p21-activated kinase 7|PAK-7|EC 2.7.11.1|PAK-5|p21-activated kinase 5
+Mitochondrial sodium/calcium exchanger protein|Solute carrier family 24 member 6|Solute carrier family 8 member B1|Sodium/calcium exchanger protein, mitochondrial|Sodium/potassium/calcium exchanger 6
+Non-specific lipid-transfer protein|SCP-chi|EC 2.3.1.176|SCP-X|SCPX|Propanoyl-CoA C-acyltransferase|Sterol carrier protein X|SCP-2|NSL-TP|Sterol carrier protein 2
+Cellular tumor antigen p53|Antigen NY-CO-13|Phosphoprotein p53|Tumor suppressor p53
+Dynamin-like 120 kDa protein, mitochondrial|EC 3.6.5.5|Optic atrophy protein 1|Dynamin-like 120 kDa protein, S1
+Ornithine carbamoyltransferase, mitochondrial|OTCase|Ornithine transcarbamylase|EC 2.1.3.3
+Oxidation resistance protein 1
+Metalloendopeptidase OMA1, mitochondrial|MPRP-1|EC 3.4.24.-|Overlapping with the m-AAA protease 1 homolog|Metalloprotease-related protein 1
+Protein phosphatase 1 regulatory subunit 15A|Growth arrest and DNA damage-inducible protein GADD34|Myeloid differentiation primary response protein MyD116 homolog
+Probable hydrolase PNKD|Paroxysmal nonkinesiogenic dyskinesia protein|Trans-activated by hepatitis C virus core protein 2|Myofibrillogenesis regulator 1|EC 3.-.-.-|MR-1
+Thioredoxin-dependent peroxide reductase, mitochondrial|Antioxidant protein 1|Protein MER5 homolog|HBC189|Peroxiredoxin III|Prx-III|AOP-1|EC 1.11.1.15|Peroxiredoxin-3
+Peroxiredoxin-5, mitochondrial|TPx type VI|Thioredoxin peroxidase PMP20|Alu corepressor 1|Peroxisomal antioxidant enzyme|EC 1.11.1.15|Prx-V|Antioxidant enzyme B166|Peroxiredoxin V|Liver tissue 2D-page spot 71B|AOEB166
+NADH-ubiquinone oxidoreductase chain 4L|NADH dehydrogenase subunit 4L|EC 1.6.5.3
+NADH-ubiquinone oxidoreductase chain 6|NADH dehydrogenase subunit 6|EC 1.6.5.3
+N-acetylaspartate synthetase|Camello-like protein 3|EC 2.3.1.17|NAA synthetase|N-acetyltransferase 8-like protein
+Mitochondrial inner membrane protein OXA1L|Oxidase assembly 1-like protein|OXA1Hs|OXA1-like protein
+Pyrroline-5-carboxylate reductase 1, mitochondrial|P5C reductase 1|P5CR 1|EC 1.5.1.2
+NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 11|Complex I-B14.7|CI-B14.7|NADH-ubiquinone oxidoreductase subunit B14.7
+Nitric oxide-associated protein 1
+Protein PET117 homolog, mitochondrial
+Peptidyl-tRNA hydrolase 2, mitochondrial|PTH 2|Bcl-2 inhibitor of transcription 1|EC 3.1.1.29
+Cytochrome b-c1 complex subunit 1, mitochondrial|Core protein I|Ubiquinol-cytochrome-c reductase complex core protein 1|Complex III subunit 1
+Cytochrome b-c1 complex subunit 2, mitochondrial|Complex III subunit 2|Core protein II|Ubiquinol-cytochrome-c reductase complex core protein 2
+Pentatricopeptide repeat-containing protein 1, mitochondrial
+BolA-like protein 1|hBolA
+BMP/retinoic acid-inducible neural-specific protein 3|DBCCR1-like protein 1
+ATP synthase subunit g, mitochondrial|ATPase subunit g
+D-beta-hydroxybutyrate dehydrogenase, mitochondrial|EC 1.1.1.30|Short chain dehydrogenase/reductase family 9C member 1|3-hydroxybutyrate dehydrogenase
+Biotin--protein ligase|EC 6.3.4.10|Biotin--[methylmalonyl-CoA-carboxytransferase] ligase|Biotin--[propionyl-CoA-carboxylase [ATP-hydrolyzing]] ligase|EC 6.3.4.-|EC 6.3.4.15|EC 6.3.4.9|Biotin apo-protein ligase|Biotin--[methylcrotonoyl-CoA-carboxylase] ligase|Biotin--[acetyl-CoA-carboxylase] ligase|EC 6.3.4.11|Holocarboxylase synthetase
+Armadillo repeat-containing X-linked protein 1|Protein ALEX1|ARM protein lost in epithelial cancers on chromosome X 1
+Armadillo repeat-containing X-linked protein 3|ARM protein lost in epithelial cancers on chromosome X 3|Protein ALEX3
+Protein ARMCX6
+ATP synthase F|ATPase protein 9|ATP synthase proton-transporting mitochondrial F|ATP synthase proteolipid P3|ATP synthase membrane subunit c locus 3|complex subunit C3, mitochondrial|complex subunit C3|ATPase subunit c|ATP synthase lipid-binding protein
+ATP synthase F|ATPase protein 9|ATP synthase proton-transporting mitochondrial F|complex subunit C1|ATP synthase membrane subunit c locus 1|ATP synthase proteolipid P1|complex subunit C1, mitochondrial|ATPase subunit c|ATP synthase lipid-binding protein
+Coiled-coil-helix-coiled-coil-helix domain-containing protein 7
+Choline dehydrogenase, mitochondrial|EC 1.1.99.1
+Carbonyl reductase family member 4|Quinone reductase CBR4|3-ketoacyl-[acyl-carrier-protein] reductase beta subunit|EC 1.-.-.-|EC 1.1.1.-|3-oxoacyl-[acyl-carrier-protein] reductase|KAR beta subunit|Short chain dehydrogenase/reductase family 45C member 1
+Coiled-coil domain-containing protein 90B, mitochondrial
+Cytochrome c-type heme lyase|CCHL|Holocytochrome c-type synthase|EC 4.4.1.17
+Protein CEBPZOS|CEBPZ antisense RNA 1|CEBPZ opposite strand
+Centrosomal protein of 89 kDa|Cep123|Centrosomal protein 123|Cep89|Coiled-coil domain-containing protein 123
+Caspase recruitment domain-containing protein 19|BinCARD|Bcl10-interacting CARD protein
+Methylmalonyl-CoA mutase, mitochondrial|EC 5.4.99.2|Methylmalonyl-CoA isomerase
+NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly factor 2|NDUFA12-like protein|Mimitin|B17.2-like|B17.2L|Myc-induced mitochondrial protein|MMTN
+NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11, mitochondrial|CI-ESSS|Np17.3|Complex I-ESSS|p17.3|NADH-ubiquinone oxidoreductase ESSS subunit|Neuronal protein 17.3
+NAD kinase 2, mitochondrial|EC 2.7.1.23|NAD kinase domain-containing protein 1, mitochondrial|Mitochondrial NAD kinase
+NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1|Complex I-MWFE|CI-MWFE|NADH-ubiquinone oxidoreductase MWFE subunit
+NADH dehydrogenase [ubiquinone] 1 subunit C2|NADH-ubiquinone oxidoreductase subunit B14.5b|Complex I-B14.5b|CI-B14.5b|HLC-1|Human lung cancer oncogene 1 protein
+NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1|CI-MNLL|NADH-ubiquinone oxidoreductase MNLL subunit|Complex I-MNLL
+Pyruvate dehydrogenase protein X component, mitochondrial|Lipoyl-containing pyruvate dehydrogenase complex component X|proX|E3BP|E3-binding protein|Dihydrolipoamide dehydrogenase-binding protein of pyruvate dehydrogenase complex
+Mitochondrial ornithine transporter 1|Solute carrier family 25 member 15
+Probable tRNA N6-adenosine threonylcarbamoyltransferase, mitochondrial|N6-L-threonylcarbamoyladenine synthase|A37 threonylcarbamoyladenosine biosynthesis protein OSGEPL1|A synthase|O-sialoglycoprotein endopeptidase-like protein 1|EC 2.3.1.234|tRNA threonylcarbamoyladenosine biosynthesis protein OSGEPL1
+3-oxoacyl-[acyl-carrier-protein] synthase, mitochondrial|EC 2.3.1.41|Beta-ketoacyl-ACP synthase
+Oligoribonuclease, mitochondrial|RNA exonuclease 2 homolog|EC 3.1.-.-|Small fragment nuclease
+Adenine DNA glycosylase|MutY homolog|EC 3.2.2.31|hMYH
+Cytochrome c oxidase subunit NDUFA4|NADH-ubiquinone oxidoreductase MLRQ subunit|Complex I-MLRQ|CI-MLRQ
+NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3|Complex I-B12|NADH-ubiquinone oxidoreductase B12 subunit|CI-B12
+NLR family member X1|Nucleotide-binding oligomerization domain protein 26|Caterpiller protein 11.3|CLR11.3|Nucleotide-binding oligomerization domain protein 5|Nucleotide-binding oligomerization domain protein 9
+Ornithine aminotransferase, mitochondrial|EC 2.6.1.13|Ornithine aminotransferase, hepatic|Ornithine--oxo-acid aminotransferase|Ornithine delta-aminotransferase|Ornithine aminotransferase, renal
+Mitochondrial 2-oxodicarboxylate carrier|Solute carrier family 25 member 21
+Pyrroline-5-carboxylate reductase 2|P5C reductase 2|EC 1.5.1.2|P5CR 2
+Phosphofurin acidic cluster sorting protein 2|PACS-2|PACS1-like protein
+Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex, mitochondrial|Branched chain 2-oxo-acid dehydrogenase complex component E2|transferase|BCKADE2|Dihydrolipoyllysine-residue|52 kDa mitochondrial autoantigen of primary biliary cirrhosis|EC 2.3.1.168|Dihydrolipoamide acetyltransferase component of branched-chain alpha-keto acid dehydrogenase complex|BCOADC-E2|BCKAD-E2|Dihydrolipoamide branched chain transacylase|2-methylpropanoyl|Branched-chain alpha-keto acid dehydrogenase complex component E2
+2-oxoisovalerate dehydrogenase subunit beta, mitochondrial|Branched-chain alpha-keto acid dehydrogenase E1 component beta chain|EC 1.2.4.4|BCKDH E1-beta|BCKDE1B
+Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex, mitochondrial|OGDC-E2|EC 2.3.1.61|Dihydrolipoamide succinyltransferase component of 2-oxoglutarate dehydrogenase complex|2-oxoglutarate dehydrogenase complex component E2
+Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial|Pyruvate dehydrogenase complex component E2|PDC-E2|PDCE2|Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex|70 kDa mitochondrial autoantigen of primary biliary cirrhosis|M2 antigen complex 70 kDa subunit|EC 2.3.1.12
+Olfactomedin-4|Antiapoptotic protein GW112|hGC-1|hOLfD|G-CSF-stimulated clone 1 protein|OLM4
+1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon|Lysophosphatidic acid acyltransferase epsilon|1-acylglycerol-3-phosphate O-acyltransferase 5|EC 2.3.1.51|1-AGP acyltransferase 5|1-AGPAT 5|LPAAT-epsilon
+Protoporphyrinogen oxidase|EC 1.3.3.4
+Protein preY, mitochondrial|PIGY upstream reading frame protein
+Mitochondrial cardiolipin hydrolase|PLD 6|Protein zucchini homolog|Choline phosphatase 6|Mitochondrial phospholipase|Phosphatidylcholine-hydrolyzing phospholipase D6|EC 3.1.-.-|MitoPLD|Phospholipase D6
+Polyribonucleotide nucleotidyltransferase 1, mitochondrial|Polynucleotide phosphorylase 1|PNPase old-35|3'-5' RNA exonuclease OLD35|PNPase 1|Polynucleotide phosphorylase-like protein|EC 2.7.7.8
+Lysophosphatidic acid phosphatase type 6|EC 3.1.3.2|Acid phosphatase 6, lysophosphatidic|PACPL1|Acid phosphatase-like protein 1
+Patatin-like phospholipase domain-containing protein 7|EC 3.1.1.-
+CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase, mitochondrial|Phosphatidylglycerophosphate synthase 1|PGP synthase 1|EC 2.7.8.5
+Phospholipid scramblase 3|-dependent phospholipid scramblase 3|PL scramblase 3
+Phosphatidylinositol 4-kinase beta|PI4K92|PI4Kbeta|NPIK|PI4K-beta|PtdIns 4-kinase beta|EC 2.7.1.67
