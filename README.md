@@ -1,7 +1,12 @@
-# caseolap
-CaseOLAP codes
-***1. Setting up Python environment***
+# CaseOLAP 
 
+***1. Setting up Python environment*** : 
+
+Install Anconda python and git in the Unix system. Creat the 'caseolap' python environment.
+
+```
+conda env create -f environment.yaml
+```
 
 ***2. Download documents***
 
