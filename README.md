@@ -3,7 +3,7 @@
 CaseOLAP is a cloud computing platform for phrase-mining. specifically, for user-defined entity-category association. It has five major steps; 'downloading', 'parsing', 'indexing', 'entity count' and 'CaseOLAP score calculation'. There are mltiple steps in a single major step, which are based on user's interest in entity list and categories as well as data set being used. This pipeline describes these major steps for PubMed abstracts as text data, the mitochondrial proteins as entity list, and MeSH descriptors attached to abstracts as categories.
 
 
-***1. Setting up Python environment*** : 
+***1. Setting up Python Environment*** : 
 
 Install Anconda python and git in the Unix system. Creat the 'caseolap' python environment.
 
@@ -11,7 +11,7 @@ Install Anconda python and git in the Unix system. Creat the 'caseolap' python e
 conda env create -f environment.yaml
 ```
 ---------------------------
-***2. Download documents*** : 
+***2. Download Documents*** : 
 
 Set up the FTP data address at 'config/ftp_config.json' and select 'baseline' or 'updatefiles' in 'config/download_config.json'. This will download the data file from source to the cloud storage, check the integrity of download data, and extract them.
 
@@ -26,7 +26,7 @@ Set up the parameters for parsing at 'config/parsing_config.json'. Based on the 
 python run_parsing.py
 ```
 ---------------------------
-***4. MeSH to PMID mapping***
+***4. MeSH to PMID Mapping***
 
 Create a mapping table for each MeSH term. There are multiple MeSH attached to a single document.
 
