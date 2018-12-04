@@ -62,7 +62,9 @@ python run_entitycount.py
 
 Update the metadata for Textcube from entity-count result.
 
-```python run_metadata_update.py
+```
+python run_metadata_update.py
+
 ```
 ---------------------------
 ***9. CaseOLAP score Calculation***
