@@ -10,7 +10,7 @@ Install Anconda python and git in the Unix system. Creat the 'caseolap' python e
 ```
 conda env create -f environment.yaml
 ```
-
+---------------------------
 ***2. Download documents***
 
 Set up the FTP data address at 'config/ftp_config.json' and select 'baseline' or 'updatefiles' in 'config/download_config.json'. This will download the data file from source to the cloud storage, check the integrity of download data, and extract them.
