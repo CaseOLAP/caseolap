@@ -37,7 +37,7 @@ python run_populate_init.py
 python run_textcube.py
 ```
 
-***7. Entity Count ***
+***7. Entity Count***
 
 ```
 python run_entitycount.py
@@ -47,7 +47,7 @@ python run_entitycount.py
 ```python run_metadata_update.py
 ```
 
-***9. CaseOLAP score Calculation
+***9. CaseOLAP score Calculation***
 
 ```
 python run_caseolap_score.py
