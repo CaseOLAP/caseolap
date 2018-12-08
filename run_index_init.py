@@ -7,8 +7,8 @@ from elasticsearch import Elasticsearch
 Index Parameter
 '''
 
-INDEX_NAME = "xpubmed"
-TYPE_NAME = "xpubmed_meta"
+INDEX_NAME = "pubmed"
+TYPE_NAME = "pubmed_meta"
 NUMBER_SHARDS = 1 # keep this as one if no cluster
 NUMBER_REPLICAS = 0 
 

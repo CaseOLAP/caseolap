@@ -15,11 +15,9 @@ class MeSH2PMID(object):
         self.mesh2pmid_stat = {}
 
 
-    def mesh2pmid_mapping(self,parsed_data_inputfile, mesh2pmid_outputfile,logFilePath):
+    def mesh2pmid_mapping(self,parsed_data_inputfile, mesh2pmid_outputfile,logfile):
         
-        mesh2pmid_fout = open(mesh2pmid_outputfile, "w") 
-        logfile = open(logFilePath, "w") 
-        
+        mesh2pmid_fout = open(mesh2pmid_outputfile, "w")
         
         with open(parsed_data_inputfile, "r") as data_fin:
 
@@ -58,8 +56,8 @@ class MeSH2PMID(object):
 
                     if k%500000 == 0:
                         print(k,' MeSH mapping done!')
-                    logfile.write("Total" + str(k) +' MeSH to PMID mapping done!')
-                    logfile.write("/n")
+                        logfile.write("Total" + str(k) +' MeSH to PMID mapping done!')
+                        logfile.write("\n")
                     
 
 
@@ -76,15 +74,19 @@ class MeSH2PMID(object):
             print("Finish MeSH to PMID mapping. Total escaped time %s (seconds) " % (end - start) )
             
             
-    def mesh2pmid_mapping_stat(self, mesh2pmid_statfile): 
+    def mesh2pmid_mapping_stat(self, mesh2pmid_statfile,logfile): 
         
         print('MeSH to PMID mapping stat is running......')
+        logfile.write('MeSH to PMID mapping stat is running......')
+        logfile.write("\n")
+        
+        
         
         for key,value in self.mesh2pmid.items():
             self.mesh2pmid_stat[key] = len(value)
             
-        with open(mesh2pmid_output_file,'w') as fstat:
-            json.dump(mesh2pmid_stat,fstat)
+        with open(mesh2pmid_statfile,'w') as fstat:
+            json.dump(self.mesh2pmid_stat,fstat)
             
             
             

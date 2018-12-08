@@ -28,29 +28,31 @@ Run the Entity Count Operation
     
 if __name__ == '__main__':
 
-
+    logfile = open(logFilePath, 'w')
+        
+        
     EC = EntityCount()
 
     '''
     Prepare the intity dictionary
     '''
-    EC.entity_dictionary(input_file_user_entity_list)
+    EC.entity_dictionary(input_file_user_entity_list,logfile)
 
     '''
     Prepare documents in text-cube cell and entity_count bucket
     '''
-    EC.entity_count_dictionary(input_file_textcube_pmid2cell)
+    EC.entity_count_dictionary(input_file_textcube_pmid2cell,logfile)
 
     '''
     count the entity
     '''
-    EC.entity_search(logFilePath)
+    EC.entity_search(logFilePath,logfile)
 
     '''
     Save the entity count output
     '''
-    EC.entity_count_output(output_file_entity_count,output_file_entityfound_pmid2cell)
+    EC.entity_count_output(output_file_entity_count,output_file_entityfound_pmid2cell,logfile)
 
-
+    logfile.close()
 
 

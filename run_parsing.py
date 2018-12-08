@@ -31,7 +31,9 @@ Start data parsing process --------------
 if __name__ == '__main__':
         
     t1 = time.time()
-
+    
+    logfile = open(logFilePath, "w") 
+    
     with open(parsing_config_file,'r') as f:
         parsing_config = json.load(f)
 
@@ -44,16 +46,18 @@ if __name__ == '__main__':
     # Pars Baseline    
     parse_dir(os.path.join(DATA_DIR,baseline_files),\
               pubmed_output_file,filestat_output_file,\
-              "baseline",parsing_config,logFilePath)
+              "baseline",parsing_config,logfile)
     
     # Pars Update Files
     parse_dir(os.path.join(DATA_DIR,update_files),\
               pubmed_output_file,filestat_output_file,\
-              "updatefiles",parsing_config,logFilePath)
+              "updatefiles",parsing_config,logfile)
     
     
     pubmed_output_file.close()
     filestat_output_file.close()
+    
+    logfile.close()
 
     t2 = time.time()
     

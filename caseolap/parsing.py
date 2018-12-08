@@ -181,24 +181,24 @@ class Parser(object):
         json.dump(self.filestat, self.filestat_output_file)
         self.filestat_output_file.write('\n')
         t2 = time.time()
+        
         print('Parsing finished, total',count_article, "articles parsed. Total time:",(t2 - t1))
         logfile.write('Parsing finished, total :' + str(count_article) + " articles parsed. Total time: " + str(t2 - t1))
         logfile.write("\n")
         f.close()                          
         
         
-def parse_dir(source_dir, pubmed_output_file, filestat_output_file,ndir,parsing_config,logFilePath):
+def parse_dir(source_dir, pubmed_output_file, filestat_output_file,ndir,parsing_config,logfile):
     k = 0
     total_files = len(os.listdir(source_dir))
-    with open(logFilePath,'w') as logfile:
-        print( ndir + ' parsing is running with total bulk files: ', total_files)
-        print("======================================================================")
-        logfile.write( ndir + ' parsing is running with total bulk files: '+ str(total_files))
-        logfile.write("\n")
-        logfile.write("======================================================================")
-        logfile.write("\n")
+    print( ndir + ' parsing is running with total bulk files: ', total_files)
+    print("======================================================================")
+    logfile.write( ndir + ' parsing is running with total bulk files: '+ str(total_files))
+    logfile.write("\n")
+    logfile.write("======================================================================")
+    logfile.write("\n")
         
-        if os.path.isdir(source_dir):
+    if os.path.isdir(source_dir):
             for file in os.listdir(source_dir):
                 if re.search(r'^pubmed18n\d\d\d\d.xml$', file) is not None:
                     k = k +1        
@@ -213,7 +213,7 @@ def parse_dir(source_dir, pubmed_output_file, filestat_output_file,ndir,parsing_
                                 parsing_config)
                     
                     PRS.parse_pubmed_file(logfile) 
-    logfile.close()
+   
     
     
     

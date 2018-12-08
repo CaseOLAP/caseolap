@@ -18,20 +18,28 @@ class EntityCount(object):
     
 
 
-    def entity_dictionary(self,input_file_user_entity_list):
+    def entity_dictionary(self,input_file_user_entity_list,logfile):
+        
         print("Entity dictionary is created.......")
+        logfile.write("Entity dictionary is created.......")
+        logfile.write("\n")
+        
         with open(input_file_user_entity_list, "r") as f_in:
             for line in f_in:
                 # synonums seperated by "|" and represented by the first one on each line
                 line_split = line.strip().split("|")
                 self.entity_dict[line_split[0]] = line_split
                 
-        #print(self.entity_dict)
+        
         
     
     
-    def entity_count_dictionary(self,input_file_textcube_pmid2cell):
+    def entity_count_dictionary(self,input_file_textcube_pmid2cell,logfile):
+        
         print("Entity count dictionary is initiated.......")
+        logfile.write("Entity count dictionary is initiated.......")
+        logfile.write("\n")
+        
         with open(input_file_textcube_pmid2cell, "r") as f_in:
             self.pmid_and_cat = json.load(f_in)
         self.concerned_pmid_set = set(map(lambda x: x[0], self.pmid_and_cat))
@@ -40,13 +48,13 @@ class EntityCount(object):
 
        
         
-    def entity_search(self,logFilePath):    
+    def entity_search(self,logfile):    
         """
         Search and count entities: to optimize and find count from indexer
         """
         print("Entity count is running .....")
-        
-        logfile = open(logFilePath, 'w')
+        logfile.write("Entity count is running .....")
+        logfile.write("\n")
         
         es = Elasticsearch(timeout=300)
         k = 0
@@ -54,17 +62,17 @@ class EntityCount(object):
         for entity_rep in self.entity_dict:
             for entity in self.entity_dict[entity_rep]:
 
-                #print(entity)
+               
                 
                 #entity_space_sep = "".join(map(lambda x: " " if x == "_" else x, entity))
                 entity_space_sep = entity.replace("_", " ")
 
                 # s = Search(using=es, index="pmc_all_index").query("match", abstract=entity_space_sep)
-                s = Search(using=es, index="xpubmed")\
+                s = Search(using=es, index="pubmed")\
                             .params(request_timeout=300)\
                             .query("match_phrase", abstract=entity_space_sep)
                 
-                #print("s")
+                
 
                 num_hits = 0
                 num_valid_hits = 0
@@ -102,17 +110,20 @@ class EntityCount(object):
             if k%10 == 0:
                 print(k,'entity successfully counted!')
                 logfile.write(str(k) + "entity successfully counted!")
-                logfile.write("/n")
+                logfile.write("\n")
 
         
     
     
-    def entity_count_output(self,output_file_entity_count,output_file_entityfound_pmid2cell):
+    def entity_count_output(self,output_file_entity_count,output_file_entityfound_pmid2cell,logfile):
         
         '''
         paper entity count & paper category
         '''
+        
         print("Entity count outpput is being saved...")
+        logfile.write("Entity count outpput is being saved...")
+        logfile.write("\n")
         
         with open(output_file_entity_count, "w") as f_entity,\
                 open(output_file_entityfound_pmid2cell , "w") as f_pmid2cell:

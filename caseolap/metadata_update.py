@@ -12,9 +12,12 @@ class MetadataUpdate():
             
 
     def pmid2phrase_update(self,input_file_entitycount,\
-                           output_file_pmid2pcount):
+                           output_file_pmid2pcount,\
+                           logfile):
         
         print("PMID to Phrase count dictionary is being updated.....")
+        logfile.write("PMID to Phrase count dictionary is being updated.....")
+        logfile.write("\n")
     
         '''PMID to Entity count Dictionary'''
         with open(input_file_entitycount) as f1:
@@ -37,9 +40,12 @@ class MetadataUpdate():
 
 
     def cell2pmid_update(self,input_file_textcube_pmid2cell,\
-                         output_file_metadata_cell2pmids):
+                         output_file_metadata_cell2pmids,\
+                         logfile):
         
         print("Cell to PMID is updated for entity found PMIDS....")
+        logfile.write("Cell to PMID is updated for entity found PMIDS....")
+        logfile.write("\n")
      
         for name in self.cell_names:
                 self.cell2pmids[name] = []

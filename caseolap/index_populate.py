@@ -8,14 +8,14 @@ from collections import defaultdict
 from elasticsearch import Elasticsearch
 
 
-def populate_index(inputFilePath,logFilePath,INDEX_NAME,TYPE_NAME,index_populate_config):
+def populate_index(inputFilePath,logfile,INDEX_NAME,TYPE_NAME,index_populate_config):
     
     es = Elasticsearch()
 
     ic = 0
     ir = 0
     
-    with open(inputFilePath, "r") as fin, open(logFilePath, "w") as fout:
+    with open(inputFilePath, "r") as fin: 
         
             start = time.time()
             
@@ -97,7 +97,7 @@ def populate_index(inputFilePath,logFilePath,INDEX_NAME,TYPE_NAME,index_populate
                         tmp = time.time()
                         es.bulk(index=INDEX_NAME, body=bulk_data, request_timeout = 500)
 
-                        fout.write("bulk indexing... %s, escaped time %s (seconds) \n" % ( cnt, tmp - start ) )
+                        logfile.write("bulk indexing... %s, escaped time %s (seconds) \n" % ( cnt, tmp - start ) )
                         if ic%100 ==0:
                             print(" i bulk indexing... %s, escaped time %s (seconds) " % ( cnt, tmp - start ) )
 
@@ -112,7 +112,7 @@ def populate_index(inputFilePath,logFilePath,INDEX_NAME,TYPE_NAME,index_populate
                 tmp = time.time()
                 es.bulk(index=INDEX_NAME, body=bulk_data, request_timeout = 500)
 
-                fout.write("bulk indexing... %s, escaped time %s (seconds) \n" % ( cnt, tmp - start ) )
+                logfile.write("bulk indexing... %s, escaped time %s (seconds) \n" % ( cnt, tmp - start ) )
                 if ir%100 ==0:
                     print(" r bulk indexing... %s, escaped time %s (seconds) " % ( cnt, tmp - start ) )
 
@@ -122,7 +122,7 @@ def populate_index(inputFilePath,logFilePath,INDEX_NAME,TYPE_NAME,index_populate
 
 
             end = time.time()
-            fout.write("Finish PubMed meta-data indexing. Total escaped time %s (seconds) \n" % (end - start) )
+            logfile.write("Finish PubMed meta-data indexing. Total escaped time %s (seconds) \n" % (end - start) )
             print("Finish PubMed meta-data indexing. Total escaped time %s (seconds) " % (end - start) )
                
 

@@ -10,7 +10,7 @@ import json
 class Caseolap(object):
     
     
-    def __init__(self,cvd2pmids,pmid2pcount,result_dir):
+    def __init__(self,cvd2pmids,pmid2pcount,result_dir,logfile):
         
         self.cellnames = []
         self.cvd2pmids = cvd2pmids
@@ -32,6 +32,7 @@ class Caseolap(object):
         
         self.result_dir = result_dir
         self.result_stat = []
+        self.logfile = logfile
         
         
         
@@ -65,6 +66,9 @@ class Caseolap(object):
                 
                 if verbose:
                     print('total pmids collected for cell - ',cell_name,len(cell_pmids))
+                    self.logfile.write('total pmids collected for cell - ' + str(cell_name) + ":" + str(len(cell_pmids)))
+                    self.logfile.write("\n")
+                    
                     self.result_stat.append({"cell_name": cell_name,'total pmids collected':len(cell_pmids)})
             if dump:
                 self.dump_json(self.cell_pmids,fname = 'cellpmids')
@@ -102,12 +106,18 @@ class Caseolap(object):
                 
                 if verbose:
                     print('total proteins collected for cell - ',cell_name,len(uprotein))
+                    self.logfile.write('total proteins collected for cell - ' + str(cell_name) + ":" + str(len(uprotein)))
+                    self.logfile.write("\n")
+                    
                     self.result_stat.append({"cell_name": cell_name,'total proteins collected':len(uprotein)})
                     
             self.all_proteins = list(set(allproteins))
             
             if verbose:
                     print('total proteins collected: ',len(self.all_proteins))
+                    self.logfile.write('total proteins collected: '+ str(len(self.all_proteins)))
+                    self.logfile.write("\n")
+                    
             
             if dump:
                 self.dump_json(self.all_proteins,fname = 'allproteins')

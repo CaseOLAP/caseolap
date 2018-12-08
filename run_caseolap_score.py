@@ -18,10 +18,12 @@ inputfile_pmid2pcount = './data/metadata_pmid2pcount.json'
 Output data path
 '''
 result_dir = "result/"
+logFilePath = "./log/caseolap_score_log.txt"
 
 if __name__ == '__main__':
 
-
+    logfile = open(logFilePath, "w") 
+    
     with open(inputfile_cell2pmids, 'r') as f:
         cell2pmids = json.load(f)
         
@@ -30,7 +32,7 @@ if __name__ == '__main__':
 
 
     ### Test Run
-    C = Caseolap(cell2pmids,pmid2pcount,result_dir)
+    C = Caseolap(cell2pmids,pmid2pcount,result_dir,logfile)
     C.cell_pmids_collector(dump =True,verbose =True)
     #C.cell_pmids
     C.cell_pmid2pcount_collector()
@@ -58,3 +60,4 @@ if __name__ == '__main__':
     #C.cell_dist
     C.cell_cseolap_finder(dump=True)
     #C.cell_caseolap
+    logfile.close()

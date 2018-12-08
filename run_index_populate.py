@@ -28,8 +28,8 @@ logFilePath = "./log/indexing_log.txt"
 Index parameter
 '''
     
-INDEX_NAME = "xpubmed"
-TYPE_NAME = "xpubmed_meta"
+INDEX_NAME = "pubmed"
+TYPE_NAME = "pubmed_meta"
 
 
 '''
@@ -38,7 +38,8 @@ Start poputating index
     
 if __name__ == '__main__':
 
-
+    logfile = open(logFilePath, "w")
+    
     with open(index_populate_config_file,'r') as f:
         index_populate_config = json.load(f) 
 
@@ -46,9 +47,9 @@ if __name__ == '__main__':
     '''
     Populate the index with provided indexing configuration 
     '''
-    populate_index(inputFilePath,logFilePath,INDEX_NAME,TYPE_NAME,index_populate_config)
+    populate_index(inputFilePath,logfile,INDEX_NAME,TYPE_NAME,index_populate_config)
 
-
+    logfile.close()
 
     
     
