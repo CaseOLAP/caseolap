@@ -4,7 +4,7 @@ import time
 
 
 """
-This class build TextCube
+This class builds a Text-Cube.
 """
 class TextCube(object):
     
@@ -25,8 +25,8 @@ class TextCube(object):
     def descendent_MeSH(self,input_file_root_cat,input_file_meshtree,outputfile_MeSHterms_percat,logfile):
         
         print("descendent MeSH terms are being collected....")
-        logfile.write("descendent MeSH terms are being collected....")
-        logfile.write("\n")
+        logfile.write("descendent MeSH terms are being collected.... \n")
+        logfile.write("=================================================== \n")
         
         with open(input_file_root_cat, "r") as f_cat:
             for line in f_cat:
@@ -47,6 +47,11 @@ class TextCube(object):
                         if cur_cat_tree in cur_tree:
                             self.MeSH_terms_per_cat[i].add(cur_term)
                             
+        for i in range(self.num_cat):                    
+            logfile.write(self.cell_names[i] + " : includes decendents " + str(self.MeSH_terms_per_cat[i]) + "\n")
+            
+        
+        
         
         MeSHset = []
         for item in self.MeSH_terms_per_cat:
@@ -61,8 +66,8 @@ class TextCube(object):
     def cell2pmids_mapping(self,input_file_mesh2pmid,output_file_textcube_cell2pmid,logfile):
         
         print("Textcube cell to PMID mapping is being created....")
-        logfile.write("Textcube cell to PMID mapping is being created....")
-        logfile.write("\n")
+        logfile.write("Textcube cell to PMID mapping is being created.... \n")
+        logfile.write(" ========================================== \n")
         
         self.cell2pmid = [set() for _ in range(len(self.cell_names))]
         with open(input_file_mesh2pmid, "r") as f_in:
@@ -77,9 +82,9 @@ class TextCube(object):
                 k = k+1
                 if k%1000 ==0:
                     
-                    print(k,'MeSH analysed for textcube...!')
-                    logfile.write(str(k) + 'MeSH analysed for textcube...!')
-                    logfile.write("\n")
+                    print(k,'MeSH descriptors analysed for textcube...!')
+                    logfile.write(str(k) + 'MeSH descriptors analysed for textcube...! \n')
+                  
                     
                 for i in range(self.num_cat):
                     for cur_term in self.MeSH_terms_per_cat[i]:
@@ -92,6 +97,9 @@ class TextCube(object):
         with open(output_file_textcube_cell2pmid, "w") as f_out:
             json.dump(Cell2PMID, f_out)
             
+        for k,name in enumerate(self.cell_names):    
+            logfile.write("Cell - " + name + " : includes " + str(len(Cell2PMID[k])) + " documents. \n")
+            
             
             
                     
@@ -101,8 +109,8 @@ class TextCube(object):
     def pmid2cell_mapping(self,output_file_textcube_pmid2cell,logfile):
         
         print("Textcube PMID to cell mapping is being created....")
-        logfile.write("Textcube PMID to cell mapping is being created....")
-        logfile.write("\n")
+        logfile.write("Textcube PMID to cell mapping is being created.... \n")
+        logfile.write("============================================== \n")
         
         for i in range(self.num_cat):
             for cur_pmid in self.cell2pmid[i]:
@@ -116,13 +124,13 @@ class TextCube(object):
     """
     Print cell statistics
     """
-    def cell_statistics(self,output_file_textcube_stat,logfile): 
+    def cell_statistics(self,outputfile_textcube_stat,logfile): 
         
         print("Textcube cell statistics is being created....")
-        logfile.write("Textcube cell statistics is being created....")
-        logfile.write("\n")
+        logfile.write("Textcube cell statistics is being created.... \n")
+        logfile.write("================================================ \n")
         
-        with open(output_file_textcube_stat, "w") as f_stat:
+        with open(outputfile_textcube_stat, "w") as f_stat:
             allpmid = [] 
             cell_count = [0 for i in range(self.num_cat)]
             for item in self.pmid2cell:
@@ -130,11 +138,9 @@ class TextCube(object):
                 for i in range(self.num_cat):
                     if item[1] == i:
                         cell_count[i] += 1
-
-            print('total pmids selected in class 1,2,3,4 and total is : ',\
-                  cell_count,len(set(allpmid)))
-
-            f_stat.write('total pmids selected in class 1,2,3,4 and total is : '
-                   + str(cell_count) + " and  " + str(len(set(allpmid))))  
+           
+            for k,name in enumerate(self.cell_names):
+                f_stat.write("Total documents selected in cell - " + str(name) + " is "
+                   + str(cell_count[k]) + " out of total " + str(len(set(allpmid)))   + " documents . \n" )
 
 

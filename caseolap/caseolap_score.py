@@ -105,17 +105,17 @@ class Caseolap(object):
                 self.cell_uniqp.update({cell_name:uprotein}) 
                 
                 if verbose:
-                    print('total proteins collected for cell - ',cell_name,len(uprotein))
-                    self.logfile.write('total proteins collected for cell - ' + str(cell_name) + ":" + str(len(uprotein)))
+                    print('total entities collected for cell - ',cell_name,len(uprotein))
+                    self.logfile.write('total entities collected for cell - ' + str(cell_name) + ":" + str(len(uprotein)))
                     self.logfile.write("\n")
                     
-                    self.result_stat.append({"cell_name": cell_name,'total proteins collected':len(uprotein)})
+                    self.result_stat.append({"cell_name": cell_name,'total entities collected':len(uprotein)})
                     
             self.all_proteins = list(set(allproteins))
             
             if verbose:
-                    print('total proteins collected: ',len(self.all_proteins))
-                    self.logfile.write('total proteins collected: '+ str(len(self.all_proteins)))
+                    print('total entities collected: ',len(self.all_proteins))
+                    self.logfile.write('total entities collected: '+ str(len(self.all_proteins)))
                     self.logfile.write("\n")
                     
             

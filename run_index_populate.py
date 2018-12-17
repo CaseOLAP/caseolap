@@ -8,7 +8,7 @@ from collections import defaultdict
 from elasticsearch import Elasticsearch
 
 
-from src.index_populate import *
+from caseolap.index_populate import *
 
 
 

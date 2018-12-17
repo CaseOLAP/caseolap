@@ -15,9 +15,9 @@ class MetadataUpdate():
                            output_file_pmid2pcount,\
                            logfile):
         
-        print("PMID to Phrase count dictionary is being updated.....")
-        logfile.write("PMID to Phrase count dictionary is being updated.....")
-        logfile.write("\n")
+        print("PMID to entity count count dictionary is being updated.....")
+        logfile.write("PMID to entity count dictionary is being updated.....\n")
+        logfile.write("================================================== \n")
     
         '''PMID to Entity count Dictionary'''
         with open(input_file_entitycount) as f1:
@@ -31,6 +31,9 @@ class MetadataUpdate():
                         if len(pfs)>1:
                             prot_freq.update({pfs[0]:pfs[1]})
                             self.pmid2pcount.update({pmid:prot_freq})
+                            
+                logfile.write("PMID: " + str(pmid) + " Entities count : " + str(prot_freq))
+                logfile.write("\n")
 
 
         with open(output_file_pmid2pcount, 'w') as fp:
@@ -44,8 +47,8 @@ class MetadataUpdate():
                          logfile):
         
         print("Cell to PMID is updated for entity found PMIDS....")
-        logfile.write("Cell to PMID is updated for entity found PMIDS....")
-        logfile.write("\n")
+        logfile.write("Cell to PMID is updated for entity found PMIDS.... \n")
+        logfile.write("================================================== \n")
      
         for name in self.cell_names:
                 self.cell2pmids[name] = []
@@ -59,7 +62,10 @@ class MetadataUpdate():
                         for i,name in enumerate(self.cell_names):
                             if str(item[1]) == str(i):
                                 self.cell2pmids[name].append(item[0])
-
+                                
+        for name in self.cell_names:                       
+            logfile.write("Cell : " + name + " includes" + str(len(self.cell2pmids[name])) + " documents.")
+            logfile.write("\n")
 
         with open(output_file_metadata_cell2pmids, 'w') as fc:
                         json.dump(self.cell2pmids, fc)       

@@ -10,7 +10,8 @@ from caseolap.entitycount import *
 Input data directory
 '''
 input_file_textcube_pmid2cell = "./data/textcube_pmid2cell.json"
-input_file_user_entity_list = "./input/entities.txt"
+#input_file_user_entity_list = "./input/entities.txt"
+input_file_user_entity_list = "./input/entities_large.txt"
 
 
 '''
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     '''
     count the entity
     '''
-    EC.entity_search(logFilePath,logfile)
+    EC.entity_search(logfile)
 
     '''
     Save the entity count output

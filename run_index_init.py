@@ -54,6 +54,7 @@ if __name__ == '__main__':
     '''
     Delete old index if exist
     '''
+                
     if es.indices.exists(INDEX_NAME):
              res = es.indices.delete(index = INDEX_NAME)
              print("Deleting index %s , Response: %s" % (INDEX_NAME, res))

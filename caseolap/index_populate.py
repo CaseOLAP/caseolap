@@ -19,14 +19,21 @@ def populate_index(inputFilePath,logfile,INDEX_NAME,TYPE_NAME,index_populate_con
         
             start = time.time()
             
-            #number of document processed in each bulk index
+            '''
+            number of document processed in each bulk index
+            '''
             bulk_size = 500
             
-            #data in bulk index'''
+            '''
+            data in bulk index
+            '''
             bulk_data = [] 
 
             cnt = 0
-            for line in fin: #each line is single document
+            '''
+            each line is single document
+            '''
+            for line in fin: 
 
                     cnt += 1
                     paperInfo = json.loads(line.strip())
