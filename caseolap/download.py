@@ -10,10 +10,10 @@ import subprocess
 Download function downloads PubMed data =============================
 '''
 def download_pubmed(DATA_DIR,download_config,ftp_config,logfile):
-        print("Start downloading pubmed baseline files.",ftp_config['baseline'])
+        print("Start downloading PubMed baseline files.",ftp_config['baseline'])
     
         '''
-        Downloading Baseline files
+        Downloading baseline files
         '''
         t1 = time.time()
         if download_config['baseline']:
@@ -27,13 +27,13 @@ def download_pubmed(DATA_DIR,download_config,ftp_config,logfile):
                 exit(rc)
             t2 = time.time()
             '''
-            report progress ------------
+            Report progress ------------
             '''
-            print("Finished downloading pubmed baseline files. %fs" % (t2 - t1))
-            print("Start downloading pubmed updatefiles.",ftp_config['update'])
-            logfile.write("Finish downloading pubmed baseline files. %fs" % (t2 - t1))
+            print("Finished downloading PubMed baseline files. %fs" % (t2 - t1))
+            print("Start downloading PubMed updatefiles.",ftp_config['update'])
+            logfile.write("Finish downloading PubMed baseline files. %fs" % (t2 - t1))
             logfile.write("\n")
-            logfile.write("Start downloading pubmed updatefiles......")
+            logfile.write("Start downloading PubMed updatefiles......")
             logfile.write("\n")
             
         else:
@@ -46,7 +46,7 @@ def download_pubmed(DATA_DIR,download_config,ftp_config,logfile):
             rc = os.system(str("wget -q -r --directory-prefix=%s --no-parent "+ ftp_config['update']) % DATA_DIR)
     
             if rc != 0:
-                logfile.write("Return code of downloading pubmed update files via wget is %d, not zero." % rc)
+                logfile.write("Return code of downloading PubMed update files via wget is %d, not zero." % rc)
                 logfile.write("\n")
                 logfile.write("Link: " + ftp_config['update'])
                 logfile.write("\n")
@@ -55,9 +55,9 @@ def download_pubmed(DATA_DIR,download_config,ftp_config,logfile):
             '''
             report progress ------------
             '''
-            logfile.write("Finished downloading pubmed update files. %fs" % (t3 - t2))
+            logfile.write("Finished downloading PubMed update files. %fs" % (t3 - t2))
             logfile.write("\n")
-            print("Finished downloading pubmed update files. %fs" % (t3 - t2))
+            print("Finished downloading PubMed update files. %fs" % (t3 - t2))
        
         
         
@@ -107,7 +107,7 @@ def check_md5(file):
             exit(1)
             
 '''
-Data Extraction =================================
+Data extraction =================================
 '''
 
  # Assume filename is *.gz
