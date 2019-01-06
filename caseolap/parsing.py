@@ -11,7 +11,7 @@ from lxml import etree
 
 class Parser(object):
     
-    
+    '''Class to parse the documents'''
     def __init__(self,file,pubmed_output_file, filestat_output_file, parsing_config):
         
         #input
