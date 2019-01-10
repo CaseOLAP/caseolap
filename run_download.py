@@ -46,7 +46,7 @@ if __name__ == '__main__':
     Start download ---------------------
     '''
     
-    #download_pubmed(DATA_DIR,download_config,ftp_config,logfile)
+    download_pubmed(DATA_DIR,download_config,ftp_config,logfile)
     
     ''' 
     verify download -----------------
