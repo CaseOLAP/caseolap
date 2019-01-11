@@ -200,7 +200,7 @@ def parse_dir(source_dir, pubmed_output_file, filestat_output_file,ndir,parsing_
         
     if os.path.isdir(source_dir):
             for file in os.listdir(source_dir):
-                if re.search(r'^pubmed18n\d\d\d\d.xml$', file) is not None:
+                if re.search(r'^pubmed19n\d\d\d\d.xml$', file) is not None:
                     k = k +1        
                     print(k," th file out of ",total_files," from " + ndir+ ": ", file," is being parsed....") 
                     logfile.write(str(k)+ " th file out of "+ str(total_files) + \
