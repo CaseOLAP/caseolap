@@ -47,7 +47,7 @@ if __name__ == '__main__':
     
     '''
     Start elasticsearch
-    ''''
+    '''
     es = Elasticsearch()
               
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     Create new index   
     '''
     res = es.indices.create(index = INDEX_NAME, body = request_body)
-    print("Create index %s , Response: %s" % (INDEX_NAME, res))
+    print("Successfully, created index %s , Response: %s" % (INDEX_NAME, res))
 
 
 
