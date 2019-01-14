@@ -54,7 +54,7 @@ def populate_index(inputFilePath,logfile,INDEX_NAME,TYPE_NAME,index_populate_con
                     Update date
                     '''
                     if index_populate_config['date']:
-                        data_dict["date"] = paperInfo['PubDate']
+                        data_dict["date"] = str(paperInfo['PubDate'])
                     
                     '''
                     Update MeSH
