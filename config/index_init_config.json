@@ -1,1 +1,1 @@
-{"pmid": {"type": "keyword"}, "date": {"type": "keyword"}, "author": {"type": "keyword"}, "journal": {"type": "keyword"}, "MeSH": {"type": "text", "similarity": "BM25"}, "abstract": {"type": "text"}, "location": {"type": "text"}, "title": {"type": "text"}}
+{"pmid": {"type": "keyword"}, "date": {"type": "text"}, "author": {"type": "keyword"}, "journal": {"type": "keyword"}, "MeSH": {"type": "text", "similarity": "BM25"}, "abstract": {"type": "text"}, "location": {"type": "text"}, "title": {"type": "text"}}
