@@ -2,7 +2,7 @@
 
 CaseOLAP is a cloud computing platform for phrase-mining. specifically, for user-defined entity-category association. It has five major steps; 'downloading', 'parsing', 'indexing', 'entity count' and 'CaseOLAP score calculation'. There are mltiple steps in a single major step, which are based on user's interest in entity list and categories as well as data set being used. This pipeline describes these major steps for PubMed abstracts as text data, the mitochondrial proteins as entity list, and MeSH descriptors attached to abstracts as categories.
 
-### Publication: https://www.jove.com/video/59108/cloud-based-phrase-mining-analysis-user-defined-phrase-category
+### Publication: [Cloud-Based Phrase Mining and Analysis of User-Defined Phrase-Category Association in Biomedical Publications](https://www.jove.com/video/59108/cloud-based-phrase-mining-analysis-user-defined-phrase-category)
 
 
 ***1. Setting up Python Environment*** : 
