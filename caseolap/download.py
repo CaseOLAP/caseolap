@@ -10,8 +10,7 @@ import subprocess
 Download function downloads PubMed data =============================
 '''
 def download_pubmed(DATA_DIR,download_config,ftp_config,logfile):
-        print("Start downloading PubMed baseline files.",ftp_config['baseline'])
-    
+        
         '''
         Downloading baseline files
         '''
