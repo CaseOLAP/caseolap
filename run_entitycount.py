@@ -10,9 +10,7 @@ from caseolap.entitycount import *
 Input data directory
 '''
 input_file_textcube_pmid2cell = "./data/textcube_pmid2cell.json"
-#input_file_user_entity_list = "./input/entities.txt"
-input_file_user_entity_list = "./input/entities_large.txt"
-
+input_file_user_entity_list = "./input/entities.txt"
 
 '''
 output data directory
