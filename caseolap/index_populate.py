@@ -44,6 +44,12 @@ def populate_index(inputFilePath,logfile,INDEX_NAME,TYPE_NAME,index_populate_con
                     update PMID
                     '''
                     data_dict["pmid"] = paperInfo.get("PMID", "-1")
+                    
+                    '''
+                    Update title
+                    '''
+                    if index_populate_config["title"]:
+                        data_dict["title"] = paperInfo['ArticleTitle']
 
                     '''
                     update Abstract
