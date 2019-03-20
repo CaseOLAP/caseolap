@@ -138,35 +138,3 @@ def populate_index(inputFilePath,logfile,INDEX_NAME,TYPE_NAME,index_populate_con
             logfile.write("Finish PubMed meta-data indexing. Total escaped time %s (seconds) \n" % (end - start) )
             print("Finish PubMed meta-data indexing. Total escaped time %s (seconds) " % (end - start) )
                
-
-
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
